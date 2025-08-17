@@ -1,0 +1,368 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/bgg.jpeg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px; 
+  width: 100%;
+
+}
+
+.login-left {
+  flex: 0.8; 
+  max-width: 40%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.login-text h1 {
+  font-family: serif;
+  font-size: 4.4rem;
+  font-weight: 100;
+  margin: 0.2rem 0;
+}
+
+.fashion-image img {
+  width: 100%;
+  min-width: 340px;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.login-right {
+  flex: 1;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size:clamp(2.7rem,2.5vw,2.7rem);
+  font-weight: 500;
+  color: black;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-card label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: black;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid rgb(216, 213, 213);
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.forgot-password {
+  font-size: 13px;
+  color: #555;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.google-btn,
+.apple-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(216, 213, 213);
+  background-color: white;
+  color: black;
+}
+
+.log-in-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.signup-link {
+  display: block;
+  margin-top: 7px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #8f8e8e;
+}
+
+.signup-link a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+@media (max-width: 1700px) {
+  .login-container {
+    padding: 0 3rem;
+  }
+  .fashion-image img {
+  width: 100%;
+  min-width: 230px;
+
+}
+.login-left h1{
+    font-size: 4rem;
+  }
+
+
+}
+
+@media (max-width: 1100px) {
+  .login-left h1{
+    font-size: 3rem;
+  }
+  .fashion-image img {
+  width: 100%;
+  min-width: 300px;
+
+}
+  .login-container {
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+ 
+  .login-card {
+    max-width: 400px;
+    padding: 2rem;
+  }
+   .login-card h2{
+    font-size: 50px;
+  }
+  .login-card label{
+    font-size: 23px;
+  }
+  .login-card input{
+    padding: 15px;
+  }
+  .forgot-password{
+    font-size: 12px;
+  }
+  .login-card button{
+    padding: 15px;
+    font-size: 23px;
+  }
+  .log-in-btn{
+    padding: 15px;
+  }
+  .signup-link{
+    font-size: 13px;
+  }
+
+}
+@media (max-width: 900px) {
+
+
+  .login-text h1 {
+    font-size: clamp(2rem, 10vw, 4rem); 
+  }
+
+   .fashion-image img {
+  width: 100%;
+  min-width: 280px;
+
+}
+
+  .login-card {
+    min-width: clamp(350px, 40vw, 650px);
+  }
+
+  .login-card h2 {
+    font-size: 60px;
+  }
+
+  .login-card label {
+    font-size: 22px;
+  }
+
+  .login-card input {
+    padding: 13px;
+  }
+
+  .forgot-password {
+    font-size: 18px;
+  }
+
+  .signup-link {
+    font-size: 18px;
+  }
+
+  .log-in-btn {
+    padding: 13px;
+  }
+
+  .login-card button {
+    padding: 13px;
+    font-size: 22px;
+  }
+}
+
+ @media (max-width: 700px) {
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .login-card {
+  min-width: clamp(350px, 70vw, 650px);
+    height: 680px;
+  }
+
+  .login-card h2 {
+    font-size: 4.2rem;
+  }
+  .login-card label{
+    font-size: 25px;
+  }
+  .login-card input{
+    padding: 18px;
+  }
+  .forgot-password{
+    font-size: 19px;
+  }
+  .social-buttons{
+    padding: 2px;
+  }
+  .login-card button{
+padding: 18px;
+font-size: 24px;
+  }
+  .log-in-btn{
+    padding: 18px;
+    font-size: 25px;
+  }
+  .signup-link{
+    font-size: 18px;
+  }
+
+}
+
+ @media (max-width: 400px) {
+  .login-left {
+    display: none;
+  }
+ 
+ .login-card {
+    min-width: 295px;
+    height: fit-content;
+
+  }
+   .login-card label{
+    font-size: 20px;
+  }
+.login-card input{
+  padding: 18px;
+}
+.forgot-password{
+  font-size: 20px;
+
+}
+.login-card button{
+  padding: 15px;
+ font-size: 19px;
+}
+
+.log-in-btn{
+  padding: 18px;
+  margin-top: 10px;
+
+}
+.signup-link{
+  font-size: 14px;
+}
+  .login-card h2 {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;      
+    min-height: 100vh;       
+    padding: 1rem;            
+  }
+
+  .login-right {
+    width: clamp(250px, 80%, 320px); 
+    margin: 0;
+  }
+
+  
+
+}
+
+
